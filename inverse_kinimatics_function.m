@@ -1,4 +1,4 @@
-function [theta1,theta2] = inverse_kinimatic_function(px,py)
+function [theta1,theta2] = inverse_kinimatics_function(px,py)
  
 % Τα μήκη των συνδέσμων σε m.
  L1 = 2;
@@ -36,3 +36,4 @@ function [theta1,theta2] = inverse_kinimatic_function(px,py)
  plot(x2,y2)
  
 end
+
