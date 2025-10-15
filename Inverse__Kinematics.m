@@ -25,16 +25,16 @@ r = sqrt(px^2 + py^2);
 % Έλεγχος για το αν το σημείο ανήκει στον χώρο εργασίας
 if ((r < r_max) & (r > r_min))                                          
     disp("Το σημείο βρίσκεται εντός του χώρου εργασίας του βραχίονα")
-    [theta_1_,theta_2_] = inverse_kinimatic_function(px,py)
+    [theta_1_,theta_2_] = inverse_kinimatics_function(px,py)
 else
     if (r == r_min)
         disp("Το σημείο βρίσκεται στο εσωτερικό όριο του χώρου εργασίας")
-        theta_1_ = inverse_kinimatic_function(px,py)
+        theta_1_ = inverse_kinimatics_function(px,py)
         theta_2_ = 180;
       else
         if (r == r_max)
             disp("Το σημείο βρίσκεται στο εξωτερικό όριο του χώρου εργασίας")
-            theta_1_ = inverse_kinimatic_function(px,py)
+            theta_1_ = inverse_kinimatics_function(px,py)
             theta_2_ = 0;
          end
     end
@@ -45,3 +45,4 @@ if ((r>r_max) | (r<r_min))
     disp("Το σημείο βρίσκεται εκτός του χώρου εργασίας.")   
     disp("Παρακαλώ δώστε νέες συντεταγμένες.")
 end
+
